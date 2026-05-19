@@ -4,9 +4,100 @@ html, body {
   background: #0a0a0a;
   color: #eee;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body:not(.landing) {
   overflow: hidden;
 }
 
 canvas {
   display: block;
+}
+
+/* ---------- landing page ---------- */
+body.landing {
+  overflow: auto;
+  line-height: 1.5;
+}
+
+.landing-main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+.landing-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  margin: 0;
+  color: #aaa;
+}
+
+.landing-section {
+  margin-top: 2rem;
+}
+
+.landing-section h2 {
+  margin: 0 0 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #888;
+}
+
+.example-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.example-list li {
+  padding: 0.65rem 0;
+  border-top: 1px solid #1e1e1e;
+}
+
+.example-list li:last-child {
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.example-list a {
+  color: #dce85a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.example-list a:hover {
+  text-decoration: underline;
+}
+
+.example-list .desc {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.example-list code {
+  font-size: 0.85em;
+  color: #bbb;
+}
+
+.landing-footer {
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.landing-footer code {
+  color: #aaa;
+}
+
+.landing-footer a {
+  color: #dce85a;
 }

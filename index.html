@@ -5,10 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>face-hand-vibe</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/addons/p5.sound.min.js"></script>
 </head>
-<body>
-  <script type="module" src="./sketch.js"></script>
+<body class="landing">
+  <main class="landing-main">
+    <header class="landing-header">
+      <h1>face-hand-vibe</h1>
+      <p class="tagline">
+        Live face + hand tracking in the browser with p5.js and MediaPipe.
+        Serve this repo locally, allow camera access, then open an example.
+      </p>
+    </header>
+
+    <section class="landing-section">
+      <h2>Starter</h2>
+      <ul class="example-list">
+        <li>
+          <a href="starter/">Boilerplate demo</a>
+          <span class="desc">webcam feed with a nose dot and fingertip dots — edit <code>sketch.js</code></span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="landing-section">
+      <h2>Examples</h2>
+      <ul class="example-list">
+        <li>
+          <a href="examples/01-particles-follow-nose/">01 — particles follow nose</a>
+          <span class="desc">particles drift toward your nose</span>
+        </li>
+        <li>
+          <a href="examples/02-pinch-to-draw/">02 — pinch to draw</a>
+          <span class="desc">pinch thumb and index to draw strokes</span>
+        </li>
+        <li>
+          <a href="examples/03-mouth-controls-tone/">03 — mouth controls tone</a>
+          <span class="desc">mouth opens pitch; head tilt changes volume</span>
+        </li>
+        <li>
+          <a href="examples/04-two-hands-stretch-image/">04 — two hands stretch image</a>
+          <span class="desc">pinch distance scales and rotates an image</span>
+        </li>
+        <li>
+          <a href="examples/05-master-controls/">05 — master controls</a>
+          <span class="desc">live GUI inspector for signals and landmarks</span>
+        </li>
+        <li>
+          <a href="examples/06-data-flow-graph/">06 — data-flow graph</a>
+          <span class="desc">TouchDesigner-style pipeline visualiser</span>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="landing-footer">
+      <p>
+        Run locally: <code>python3 -m http.server 8000</code> then open
+        <a href="http://localhost:8000/">http://localhost:8000</a>
+      </p>
+    </footer>
+  </main>
 </body>
 </html>
